@@ -37,6 +37,10 @@
             this.tbResult = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
+            this.pb1 = new System.Windows.Forms.PictureBox();
+            this.pb2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
             this.SuspendLayout();
             // 
             // tbFirstNumerator
@@ -44,6 +48,7 @@
             this.tbFirstNumerator.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbFirstNumerator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbFirstNumerator.Location = new System.Drawing.Point(63, 62);
             this.tbFirstNumerator.Multiline = true;
             this.tbFirstNumerator.Name = "tbFirstNumerator";
@@ -53,6 +58,7 @@
             // 
             // tbSecondNumerator
             // 
+            this.tbSecondNumerator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.tbSecondNumerator.Location = new System.Drawing.Point(222, 62);
             this.tbSecondNumerator.Multiline = true;
             this.tbSecondNumerator.Name = "tbSecondNumerator";
@@ -62,6 +68,7 @@
             // 
             // tbFirstDenumerator
             // 
+            this.tbFirstDenumerator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.tbFirstDenumerator.Location = new System.Drawing.Point(63, 159);
             this.tbFirstDenumerator.Multiline = true;
             this.tbFirstDenumerator.Name = "tbFirstDenumerator";
@@ -71,6 +78,7 @@
             // 
             // tbSecondDenumerator
             // 
+            this.tbSecondDenumerator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.tbSecondDenumerator.Location = new System.Drawing.Point(222, 159);
             this.tbSecondDenumerator.Multiline = true;
             this.tbSecondDenumerator.Name = "tbSecondDenumerator";
@@ -99,9 +107,11 @@
             this.btnCalculate.TabIndex = 5;
             this.btnCalculate.Text = "Обчислити";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // tbResult
             // 
+            this.tbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.tbResult.Location = new System.Drawing.Point(130, 302);
             this.tbResult.Multiline = true;
             this.tbResult.Name = "tbResult";
@@ -128,12 +138,35 @@
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = "Очистити";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // pb1
+            // 
+            this.pb1.Image = global::CalculatorFractions.Properties.Resources.line;
+            this.pb1.Location = new System.Drawing.Point(63, 132);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(54, 10);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb1.TabIndex = 9;
+            this.pb1.TabStop = false;
+            // 
+            // pb2
+            // 
+            this.pb2.Image = global::CalculatorFractions.Properties.Resources.line;
+            this.pb2.Location = new System.Drawing.Point(222, 132);
+            this.pb2.Name = "pb2";
+            this.pb2.Size = new System.Drawing.Size(54, 10);
+            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb2.TabIndex = 10;
+            this.pb2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(346, 362);
+            this.Controls.Add(this.pb2);
+            this.Controls.Add(this.pb1);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbResult);
@@ -145,6 +178,8 @@
             this.Controls.Add(this.tbFirstNumerator);
             this.Name = "Form1";
             this.Text = "Калькулятор";
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +196,8 @@
         private System.Windows.Forms.TextBox tbResult;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.PictureBox pb1;
+        private System.Windows.Forms.PictureBox pb2;
     }
 }
 
