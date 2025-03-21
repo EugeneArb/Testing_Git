@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\\u041C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\Desktop\\Testing_Git\\Testing_Git\\CalculatorFractions\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ECA58346-B3EB-481A-8883-3D0ADA1A24CC}|TestingCalculator\\TestingCalculator.csproj|c:\\users\\\u043C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\desktop\\testing_git\\testing_git\\calculatorfractions\\testingcalculator\\calculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA58346-B3EB-481A-8883-3D0ADA1A24CC}|TestingCalculator\\TestingCalculator.csproj|solutionrelative:testingcalculator\\calculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD7024D-CFFF-4A9B-8B83-D433A2694B87}|CalculatorFractions\\CalculatorFractions.csproj|c:\\users\\\u043C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\desktop\\testing_git\\testing_git\\calculatorfractions\\calculatorfractions\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD7024D-CFFF-4A9B-8B83-D433A2694B87}|CalculatorFractions\\CalculatorFractions.csproj|solutionrelative:calculatorfractions\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FD7024D-CFFF-4A9B-8B83-D433A2694B87}|CalculatorFractions\\CalculatorFractions.csproj|c:\\users\\\u043C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\desktop\\testing_git\\testing_git\\calculatorfractions\\calculatorfractions\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FD7024D-CFFF-4A9B-8B83-D433A2694B87}|CalculatorFractions\\CalculatorFractions.csproj|solutionrelative:calculatorfractions\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -31,19 +39,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\Desktop\\Testing_Git\\Testing_Git\\CalculatorFractions\\CalculatorFractions\\Calculator.cs",
+              "RelativeDocumentMoniker": "CalculatorFractions\\Calculator.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\Desktop\\Testing_Git\\Testing_Git\\CalculatorFractions\\CalculatorFractions\\Calculator.cs",
+              "RelativeToolTip": "CalculatorFractions\\Calculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T20:11:45.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\\u041C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\Desktop\\Testing_Git\\Testing_Git\\CalculatorFractions\\TestingCalculator\\CalculatorTests.cs",
+              "RelativeDocumentMoniker": "TestingCalculator\\CalculatorTests.cs",
+              "ToolTip": "C:\\Users\\\u041C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\Desktop\\Testing_Git\\Testing_Git\\CalculatorFractions\\TestingCalculator\\CalculatorTests.cs",
+              "RelativeToolTip": "TestingCalculator\\CalculatorTests.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwBsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T20:08:07.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\\u041C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\Desktop\\Testing_Git\\Testing_Git\\CalculatorFractions\\CalculatorFractions\\Form1.cs",
               "RelativeDocumentMoniker": "CalculatorFractions\\Form1.cs",
               "ToolTip": "C:\\Users\\\u041C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\Desktop\\Testing_Git\\Testing_Git\\CalculatorFractions\\CalculatorFractions\\Form1.cs",
               "RelativeToolTip": "CalculatorFractions\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAQwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T19:43:03.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\\u041C\u0456\u0439 \u043D\u043E\u0443\u0442\u0431\u0443\u043A\\Desktop\\Testing_Git\\Testing_Git\\CalculatorFractions\\CalculatorFractions\\Form1.cs",
               "RelativeDocumentMoniker": "CalculatorFractions\\Form1.cs",

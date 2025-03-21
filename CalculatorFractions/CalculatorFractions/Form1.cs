@@ -17,35 +17,12 @@ namespace CalculatorFractions
             InitializeComponent();
         }
 
-        // Функція для обчислення найбільшого спільного дільника (НСД)
-        private int GCD(int a, int b)
-        {
-            while (b != 0)
-            {
-                int temp = b;
-                b = a % b;
-                a = temp;
-            }
-            return a;
-        }
-
-        // Функція для скорочення дробу
-        private void ReduceFraction(ref int numerator, ref int denominator)
-        {
-            int gcd = GCD(Math.Abs(numerator), Math.Abs(denominator));
-            numerator /= gcd;
-            denominator /= gcd;
-
-            if (denominator < 0)
-            {
-                numerator = -numerator;
-                denominator = -denominator;
-            }
-        }
+        private readonly Calculator _calculator = new Calculator();
+        
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             if (tbFirstDenumerator.Text.Trim().Length > 0 && tbFirstNumerator.Text.Trim().Length > 0 &&
-        tbSecondDenumerator.Text.Trim().Length > 0 && tbSecondNumerator.Text.Trim().Length > 0)
+                tbSecondDenumerator.Text.Trim().Length > 0 && tbSecondNumerator.Text.Trim().Length > 0)
             {
                 int firstNumerator = int.Parse(tbFirstNumerator.Text);
                 int firstDenominator = int.Parse(tbFirstDenumerator.Text);
@@ -61,36 +38,26 @@ namespace CalculatorFractions
                 switch (cbSign.Text)
                 {
                     case "+":
-                        int addNumerator = (firstNumerator * secondDenominator) + (secondNumerator * firstDenominator);
-                        int addDenominator = firstDenominator * secondDenominator;
-                        ReduceFraction(ref addNumerator, ref addDenominator);
-                        tbResult.Text = $"{addNumerator}/{addDenominator}";
+                        tbResult.Text = _calculator.AddFractions(firstNumerator, firstDenominator, secondNumerator, secondDenominator);
                         break;
 
                     case "-":
-                        int subtractNumerator = (firstNumerator * secondDenominator) - (secondNumerator * firstDenominator);
-                        int subtractDenominator = firstDenominator * secondDenominator;
-                        ReduceFraction(ref subtractNumerator, ref subtractDenominator);
-                        tbResult.Text = $"{subtractNumerator}/{subtractDenominator}";
+                        tbResult.Text = _calculator.SubtractFractions(firstNumerator, firstDenominator, secondNumerator, secondDenominator);
                         break;
 
                     case "*":
-                        int multiplyNumerator = firstNumerator * secondNumerator;
-                        int multiplyDenominator = firstDenominator * secondDenominator;
-                        ReduceFraction(ref multiplyNumerator, ref multiplyDenominator);
-                        tbResult.Text = $"{multiplyNumerator}/{multiplyDenominator}";
+                        tbResult.Text = _calculator.MultiplyFractions(firstNumerator, firstDenominator, secondNumerator, secondDenominator);
                         break;
 
                     case "/":
-                        if (secondNumerator == 0)
+                        try
+                        {
+                            tbResult.Text = _calculator.DivideFractions(firstNumerator, firstDenominator, secondNumerator, secondDenominator);
+                        }
+                        catch (DivideByZeroException)
                         {
                             MessageBox.Show("Ділення на нуль неможливе!", "Обчислення", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
                         }
-                        int divideNumerator = firstNumerator * secondDenominator;
-                        int divideDenominator = firstDenominator * secondNumerator;
-                        ReduceFraction(ref divideNumerator, ref divideDenominator);
-                        tbResult.Text = $"{divideNumerator}/{divideDenominator}";
                         break;
 
                     default:
