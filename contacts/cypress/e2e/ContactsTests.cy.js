@@ -27,5 +27,13 @@ describe('Contacts-App Tests', () => {
     cy.get('.contacts-list li span').first().should('have.text', 'Genia Harbuz - 99999999999');
   });
 
+  it('Test for deleting a contact.', () => {
+    cy.get('input[placeholder="Ім\'я"]').type('Eugene Garbuz');
+    cy.get('input[placeholder="Телефон"]').type('28623674267');
+    cy.get('button').contains('Додати').click();
   
+    cy.get('.contacts-list li button').contains('Видалити').click();
+  
+    cy.get('.contacts-list li').should('have.length', 0);
+  });
 });
