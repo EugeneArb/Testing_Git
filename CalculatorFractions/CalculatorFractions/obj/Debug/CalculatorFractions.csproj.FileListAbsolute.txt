@@ -1,0 +1,10 @@
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\bin\Debug\CalculatorFractions.exe.config
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\bin\Debug\CalculatorFractions.exe
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\bin\Debug\CalculatorFractions.pdb
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\obj\Debug\CalculatorFractions.csproj.AssemblyReference.cache
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\obj\Debug\CalculatorFractions.Form1.resources
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\obj\Debug\CalculatorFractions.Properties.Resources.resources
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\obj\Debug\CalculatorFractions.csproj.GenerateResource.cache
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\obj\Debug\CalculatorFractions.csproj.CoreCompileInputs.cache
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\obj\Debug\CalculatorFractions.exe
+C:\Users\Мій ноутбук\Desktop\Testing_Git\Testing_Git\CalculatorFractions\CalculatorFractions\obj\Debug\CalculatorFractions.pdb
